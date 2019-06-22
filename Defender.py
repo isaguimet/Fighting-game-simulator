@@ -1,6 +1,11 @@
 from Globals import * 
 import random
 
+""" 
+Version: June 22nd, 2019
+The Defender class generates a defense based on the probabilities read in from the file: input.txt
+"""
+
 class Defender:
     """
     Function: __init__(). 

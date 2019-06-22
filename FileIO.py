@@ -1,3 +1,8 @@
+""" 
+Version: June 22nd, 2019
+The FileIO class reads the number of total turns and probabilities from the file: input.txt
+"""
+
 class FileIO:
     """
     Function: __init__(). 
@@ -54,54 +59,20 @@ class FileIO:
     """
     def readingLines(self): 
         # Assigning line0 to new variable
-        self.totalTurns = self.line
+        self.totalTurns = int (self.line)
 
         # Reading second Attacker line in the file                
         line1 = self.inputFile.readline()
         attacker = line1.split(",")
-        self.probExtraLowAttack = attacker[1]
-        self.probLowAttack = attacker[2]
-        self.probMediumAttack = attacker[3]
-        self.probHighAttack = attacker[4]
+        self.probExtraLowAttack = int (attacker[1])
+        self.probLowAttack = int (attacker[2])
+        self.probMediumAttack = int (attacker[3])
+        self.probHighAttack = int (attacker[4])
         
         #Reading third defender line in the file 
         line2 = self.inputFile.readline()
         defender = line2.split(",")
-        self.probExtraLowDefense = defender[1]
-        self.probLowDefense = defender[2] 
-        self.probMediumDefense = defender[3] 
-        self.probHighDefense = defender[4] 
-
-        self.convertToInteger()
-
-    """
-    Function: convertToInteger()
-    @ 1 argument type: convertToInteger(self)
-    @ returns (none)
-    """
-    def convertToInteger(self):
-        element = ""
-        # Converting total turns to an integer
-        element = str(self.totalTurns)
-        self.totalTurns = int(element)
-
-        # Converting each type of attack to integer
-        element = str(self.probExtraLowAttack)
-        self.probExtraLowAttack = int(element)
-        element = str(self.probLowAttack)
-        self.probLowAttack = int(element)
-        element = str(self.probMediumAttack)
-        self.probMediumAttack = int(element)
-        element = str(self.probHighAttack)
-        self.probHighAttack = int(element)
-
-        # Converting each type of defense to integer
-        element = str(self.probExtraLowDefense)
-        self.probExtraLowDefense = int(element)
-        element = str(self.probLowDefense)
-        self.probLowDefense = int(element)
-        element = str(self.probMediumDefense)
-        self.probMediumDefense = int(element)
-        element = str(self.probHighDefense)
-        self.probHighDefense = int(element)
-
+        self.probExtraLowDefense = int (defender[1])
+        self.probLowDefense = int (defender[2])
+        self.probMediumDefense = int (defender[3]) 
+        self.probHighDefense = int (defender[4])

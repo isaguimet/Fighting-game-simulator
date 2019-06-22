@@ -1,12 +1,10 @@
 """
-Version: 13 - April 9th, 2018. 
+Version: 14 - June 22nd, 2019. 
 Summary of overall features - This program is a simple text-based fight simulator. There are two opponents: 
 an attacker (that only launches attacks) and a defender (that can only defend against the attacks). 
 There's four types of attacks categorized by height: extra-low, low, medium and high.
 Similar to the attacks there are four types of defenses: extra-low, low, medium and high. If the heights 
 of the attack-defense match, then the attack is blocked. Otherwise the attack is counted as a 'hit'. 
-
-This program has implemented 15 functions / methods.
 
 Program Limitations: This program assumes that any other version of the input file used will have 
 the same format and the four probabilities for each of the attacker and defender will sum to 100%.

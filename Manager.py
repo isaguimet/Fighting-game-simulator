@@ -2,6 +2,12 @@ from FileIO import *
 from Attacker import *
 from Defender import *
 
+""" 
+Version: June 22nd, 2019
+The Manager class runs the simulation. It checks the attack-defense from a particular round match and records the correct 
+result ('hit' or 'blocked'). Finally, it prints the simulation summary.
+"""
+
 class Manager:
     """
     Function: __init__(). 
@@ -120,7 +126,7 @@ class Manager:
         tallyAttacker2 = int ((self.anAttacker.tallyLowAttack/self.totalTurns)*100)
         tallyAttacker3 = int ((self.anAttacker.tallyMediumAttack/self.totalTurns)*100)
         tallyAttacker4 = int ((self.anAttacker.tallyHighAttack/self.totalTurns)*100)
-        
+
         print ("Attacker Proportions: X-Low %s%%," %tallyAttacker1, "Low %s%%, " %tallyAttacker2, end="")
         print ("Medium %s%%," %tallyAttacker3, "High %s%%" %tallyAttacker4)
 

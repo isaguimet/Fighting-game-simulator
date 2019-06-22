@@ -1,6 +1,11 @@
 from Globals import *
 import random
 
+""" 
+Version: June 22nd, 2019
+The Attacker class generates an attack based on the probabilities read in from the file: input.txt
+"""
+
 class Attacker:
     """
     Function: __init__(). 
