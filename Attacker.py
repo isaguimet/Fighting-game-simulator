@@ -1,7 +1,3 @@
-# Isabella Guimet Pedraz  
-# Student ID: 30040654
-# Tutorial Number: 3
-
 from Globals import *
 import random
 
