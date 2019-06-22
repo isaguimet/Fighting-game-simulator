@@ -116,25 +116,19 @@ class Manager:
         print ()
         print ("Summary of kombat")
         print ("Total hits: %s" %totalHits, "  Total blocks: %s" %totalBlocks)
-        tallyAttacker1 = (self.anAttacker.tallyXLowAttack/self.totalTurns)*100
-        tallyAttacker1 = int(tallyAttacker1)
-        tallyAttacker2 = (self.anAttacker.tallyLowAttack/self.totalTurns)*100
-        tallyAttacker2 = int(tallyAttacker2)
-        tallyAttacker3 = (self.anAttacker.tallyMediumAttack/self.totalTurns)*100
-        tallyAttacker3 = int(tallyAttacker3)
-        tallyAttacker4 = (self.anAttacker.tallyHighAttack/self.totalTurns)*100
-        tallyAttacker4 = int(tallyAttacker4)
+        tallyAttacker1 = int ((self.anAttacker.tallyXLowAttack/self.totalTurns)*100)
+        tallyAttacker2 = int ((self.anAttacker.tallyLowAttack/self.totalTurns)*100)
+        tallyAttacker3 = int ((self.anAttacker.tallyMediumAttack/self.totalTurns)*100)
+        tallyAttacker4 = int ((self.anAttacker.tallyHighAttack/self.totalTurns)*100)
+        
         print ("Attacker Proportions: X-Low %s%%," %tallyAttacker1, "Low %s%%, " %tallyAttacker2, end="")
         print ("Medium %s%%," %tallyAttacker3, "High %s%%" %tallyAttacker4)
 
-        tallyDefender1 = (self.aDefender.tallyXLowDefense/self.totalTurns)*100
-        tallyDefender1 = int(tallyDefender1)
-        tallyDefender2 = (self.aDefender.tallyLowDefense/self.totalTurns)*100
-        tallyDefender2 = int(tallyDefender2)
-        tallyDefender3 = (self.aDefender.tallyMediumDefense/self.totalTurns)*100
-        tallyDefender3 = int(tallyDefender3)
-        tallyDefender4 = (self.aDefender.tallyHighDefense/self.totalTurns)*100
-        tallyDefender4 = int(tallyDefender4)
+        tallyDefender1 = int((self.aDefender.tallyXLowDefense/self.totalTurns)*100)
+        tallyDefender2 = int((self.aDefender.tallyLowDefense/self.totalTurns)*100)
+        tallyDefender3 = int((self.aDefender.tallyMediumDefense/self.totalTurns)*100)
+        tallyDefender4 = int((self.aDefender.tallyHighDefense/self.totalTurns)*100)
+        
         print ("Defender Proportions: X-Low %s%%," %tallyDefender1, "Low %s%%, " %tallyDefender2, end="")
         print ("Medium %s%%," %tallyDefender3, "High %s%%" %tallyDefender4)
 
